@@ -3,15 +3,31 @@
   <head>
     <title>Invie</title>
     <!-- Required meta tags -->
-<style media="screen">
-  body{
-    margin: 0;
-    border:10px solid red;
-  }
+
+    <style>
+
+    body{
+      margin: 0;
+    }
 
 
-</style>
+    img{
+      max-width: 100%;
+      vertical-align: top;
+      /*display: none;*/
+    }
+    img#responsive{
+      display: block;
 
+    }
+    @@media screen and (max-width: 768px) {
+      img#responsive{
+        display: block;
+      }
+
+    }
+
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -20,10 +36,11 @@
   </head>
   <body>
 
+<img src="responsive.png" class="img-fluid pull-xs-left" alt="" id="responsive">
     <img src="header.jpg" class="img-fluid pull-xs-left" alt="">
     <img src="hero.jpg" class="img-fluid pull-xs-left" alt="">
     <img src="acustica.jpg" class="img-fluid pull-xs-left" alt="">
-    <img src="clasica.jpg" class="img-fluid pull-xs-left" alt="">
+
 
 
 
